@@ -1,0 +1,109 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+.container__flexbox {
+  background-color: #97fc94;
+  height: 48vh;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+.flexbox__items {
+  background-color: #ffffff;
+  width: 15%;
+  height: 20%;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  outline: solid 1px #0a8006;
+}
+.container__control {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  margin: 0 auto;
+  gap: 9px;
+}
+.container__controles-justify,
+.container__controles-aling {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+.container__controles-aling .flex-colum {
+  outline: solid 1px #d4d402;
+  background-color: #ffffb6;
+}
+.container__controles-aling .flex-colum:hover {
+  background-color: #eeee0d;
+  box-shadow: 0 0 10px #ffff00;
+  outline: solid 1px #d1d106;
+  color: #000000;
+}
+.container__controles-aling .flex-colum:focus {
+  background-color: #eeee0d;
+  box-shadow: 0 0 10px #ffff00;
+  outline: solid 1px #d1d106;
+  color: #000000;
+}
+.container__controles-justify button,
+.container__controles-aling button {
+  padding: 7px;
+  border: none;
+  outline: 1px solid #0a8006;
+  background-color: #82ff7e;
+  color: #000000;
+  font-family: sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.container__controles-justify button:hover,
+.container__controles-aling button:hover {
+  background-color: #20b71b;
+  outline: 1px solid #22d01c;
+  box-shadow: 0 0 10px #47fe40;
+  color: #ffffff;
+}
+.container__controles-justify button:focus,
+.container__controles-aling button:focus {
+  background-color: #0a8006;
+  outline: 1px solid #22d01c;
+  box-shadow: 0 0 10px #47fe40;
+  color: #ffffff;
+
+}
+.modo-oscuro{
+  background-color: #1b1b1b;
+}
+/* media query para celulares */
+@media (max-width: 668px) {
+  .container__control {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+    height: 45vh;
+    padding: 10px;
+  }
+  .container__flexbox {
+    width: 90%;
+    height: 40vh;
+  }
+  .modoOcuro__container{
+    width: 90%;
+  }
+}
